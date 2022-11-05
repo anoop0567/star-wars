@@ -1,12 +1,20 @@
-import { Button } from "antd";
-import React from "react";
+import Logo from "../../assets/img/logo.png";
+import SearchInput from "../SearchInput";
+import "./style.css";
 
-function Header() {
+const Header = () => {
   return (
-    <header>
-      <Button type="primary">Button</Button>
-    </header>
+    <nav class="navbar sticky-top">
+      <div class="container-fluid">
+        <div class="navbar-brand">
+          <img src={Logo} className="nav-logo" />
+        </div>
+        <div class="d-flex">
+          <SearchInput />
+        </div>
+      </div>
+    </nav>
   );
-}
+};
 
 export default Header;
