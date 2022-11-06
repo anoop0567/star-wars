@@ -6,50 +6,50 @@ const MoviesContent = () => {
     <div className="container">
       <div className="row my-3">
         <div className="col col d-flex justify-content-end">
-          <div class="dropdown">
+          <div className="dropdown">
             <button
-              class="btn btn-outline-secondary rounded-0 dropdown-toggle"
+              className="btn btn-outline-secondary rounded-0 dropdown-toggle"
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
               Select Director
             </button>
-            <ul class="dropdown-menu">
+            <ul className="dropdown-menu">
               <li>
-                <a class="dropdown-item" href="#">
+                <a className="dropdown-item" href="#">
                   Action
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="#">
+                <a className="dropdown-item" href="#">
                   Another action
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="#">
+                <a className="dropdown-item" href="#">
                   Something else here
                 </a>
               </li>
             </ul>
           </div>
-          <div class="dropdown">
+          <div className="dropdown">
             <button
-              class="btn btn-outline-secondary rounded-0 dropdown-toggle"
+              className="btn btn-outline-secondary rounded-0 dropdown-toggle"
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
               Sort By
             </button>
-            <ul class="dropdown-menu">
+            <ul className="dropdown-menu">
               <li>
-                <a class="dropdown-item" href="#">
+                <a className="dropdown-item" href="#">
                   Title
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="#">
+                <a className="dropdown-item" href="#">
                   Release Date
                 </a>
               </li>
@@ -57,10 +57,10 @@ const MoviesContent = () => {
           </div>
         </div>
       </div>
-      <div class="row row-cols-1 row-cols-md-2 g-3">
+      <div className="row row-cols-1 row-cols-md-2 g-3">
         {FILMS.map((film) => {
           return (
-            <div class="col">
+            <div className="col" key={film?.id}>
               <MovieCard film={film} />
             </div>
           );

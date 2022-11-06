@@ -5,7 +5,7 @@ const SearchButton = () => {
         type="button"
         className="btn btn-outline-secondary rounded-0 w-100 text-start"
       >
-        <i class="bi bi-search"></i>
+        <i className="bi bi-search"></i>
         <span className="mx-2">Search</span>
       </button>
     </div>

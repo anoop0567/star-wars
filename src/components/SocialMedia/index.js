@@ -1,3 +1,5 @@
+import "./style.css";
+
 const SocialMedia = () => {
   return (
     <ul className="nav">

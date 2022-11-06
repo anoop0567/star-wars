@@ -1,6 +1,5 @@
 import Logo from "../../assets/img/logo.png";
 import SearchButton from "../SearchButton";
-import SearchInput from "../SearchInput";
 import SocialMedia from "../SocialMedia";
 import "./style.css";
 
