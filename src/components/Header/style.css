@@ -1,11 +1,15 @@
 .navbar {
-  background-color: #000;
+  background-color: #000000;
+  border-bottom: 1px solid #333333;
 }
 
 .nav-logo {
   display: block;
-  width: 100%;
-  height: 100%;
-  max-width: 203px;
-  max-height: 88px;
+  width: auto;
+  height: 92px;
+}
+
+.social-container,
+.action-container {
+  width: 160px;
 }

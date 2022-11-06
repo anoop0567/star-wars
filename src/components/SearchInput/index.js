@@ -2,13 +2,15 @@ import "./style.css";
 
 const SearchInput = () => {
   return (
-    <form class="d-flex" role="search">
-      <input
-        class="form-control me-2"
-        type="search"
-        placeholder="Search"
-        aria-label="Search"
-      />
+    <form className="d-flex" role="search">
+      <div className="search-container">
+        <input
+          className="search-input"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+      </div>
     </form>
   );
 };

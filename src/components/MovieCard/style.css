@@ -1,3 +1,14 @@
 .card {
   background-color: #282727;
+  border: none;
+  box-shadow: rgba(237, 236, 81, 0.31) 0px 0px 1px 0px,
+    rgba(237, 236, 81, 0.25) 0px 1px 1px 0px;
+}
+
+.card-title {
+  /* Prefix required. Even Firefox only supports the -webkit- prefix */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #edec51;
+  -webkit-text-stroke: 1px #edec51;
+  letter-spacing: 1px;
 }

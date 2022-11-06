@@ -3,12 +3,12 @@ import { FILMS } from "../../db/films";
 
 const MoviesContent = () => {
   return (
-    <div className="container-fluid">
+    <div className="container">
       <div className="row my-3">
-        <div className="col-2">
+        <div className="col col d-flex justify-content-end">
           <div class="dropdown">
             <button
-              class="btn btn-secondary dropdown-toggle"
+              class="btn btn-outline-secondary rounded-0 dropdown-toggle"
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
@@ -33,11 +33,9 @@ const MoviesContent = () => {
               </li>
             </ul>
           </div>
-        </div>
-        <div className="col-2">
           <div class="dropdown">
             <button
-              class="btn btn-secondary dropdown-toggle"
+              class="btn btn-outline-secondary rounded-0 dropdown-toggle"
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"

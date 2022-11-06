@@ -1,16 +1,21 @@
 import Logo from "../../assets/img/logo.png";
+import SearchButton from "../SearchButton";
 import SearchInput from "../SearchInput";
+import SocialMedia from "../SocialMedia";
 import "./style.css";
 
 const Header = () => {
   return (
-    <nav class="navbar sticky-top">
-      <div class="container-fluid">
-        <div class="navbar-brand">
+    <nav className="navbar sticky-top">
+      <div className="container">
+        <div className="social-container">
+          <SocialMedia />
+        </div>
+        <div className="navbar-brand m-0 p-0">
           <img src={Logo} className="nav-logo" />
         </div>
-        <div class="d-flex">
-          <SearchInput />
+        <div className="action-container">
+          <SearchButton />
         </div>
       </div>
     </nav>
