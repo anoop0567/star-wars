@@ -1,43 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { useQuery } from "@apollo/client";
+import React from "react";
 
 import MovieCard from "../MovieCard";
 import Loader from "../Loader";
-import { FILMS_QUERY } from "../../api";
 import MoviesActions from "../MoviesActions";
 
-const MoviesContent = () => {
-  const [films, setFilms] = useState([]);
-  const [sortBy, setSortBy] = useState("TITLE");
-
-  const { data, loading, error } = useQuery(FILMS_QUERY);
-
-  useEffect(() => {
-    if (!data) {
-      setFilms([]);
-      return;
-    }
-    let FILMS = data?.allFilms?.films || [];
-    if (sortBy === "TITLE") {
-      FILMS = [...FILMS].sort((a, b) => {
-        if (a.title > b.title) return 1;
-        if (a.title < b.title) return -1;
-        return 0;
-      });
-    } else if (sortBy === "RELEASE_DATE") {
-      FILMS = [...FILMS].sort((a, b) => {
-        const aTime = new Date(a.releaseDate).getTime();
-        const bTime = new Date(b.releaseDate).getTime();
-        if (aTime > bTime) return 1;
-        if (aTime < bTime) return -1;
-        return 0;
-      });
-    }
-    setFilms([...FILMS]);
-  }, [data, sortBy]);
-
-  if (error) return <pre>{error.message}</pre>;
-
+const MoviesContent = ({ loading, films, sortBy, setSortBy }) => {
   return (
     <div className="container">
       <div className="row my-3">
