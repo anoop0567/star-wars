@@ -12,7 +12,7 @@ const MoviesContent = ({ loading, error, films, sortBy, setSortBy }) => {
     if (!films || films.length == 0) return;
   }, [films]);
   return (
-    <div className="container">
+    <main className="container my-4">
       <div className="row my-3">
         <div className="col d-flex justify-content-end">
           <MoviesActions
@@ -36,7 +36,7 @@ const MoviesContent = ({ loading, error, films, sortBy, setSortBy }) => {
           })}
         </div>
       )}
-    </div>
+    </main>
   );
 };
 
