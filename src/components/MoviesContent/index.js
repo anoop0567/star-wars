@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import MovieCard from "../MovieCard";
 import Loader from "../Loader";
 import MoviesActions from "../MoviesActions";
+import DataNotFound from "../DataNotFound";
 
-const MoviesContent = ({ loading, films, sortBy, setSortBy }) => {
+const MoviesContent = ({ loading, error, films, sortBy, setSortBy }) => {
+  const [directors, setDirectors] = useState([]);
+
+  useEffect(() => {
+    if (!films || films.length == 0) return;
+  }, [films]);
   return (
     <div className="container">
       <div className="row my-3">
@@ -17,6 +23,8 @@ const MoviesContent = ({ loading, films, sortBy, setSortBy }) => {
       </div>
       {loading ? (
         <Loader />
+      ) : error || films.length == 0 ? (
+        <DataNotFound />
       ) : (
         <div className="row row-cols-1 row-cols-md-2 g-3">
           {films.map((film) => {

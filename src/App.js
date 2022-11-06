@@ -51,6 +51,7 @@ function App() {
         films={films}
         sortBy={sortBy}
         setSortBy={setSortBy}
+        error={error}
       />
       <Footer />
     </>
