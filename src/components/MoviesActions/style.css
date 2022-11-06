@@ -1,0 +1,9 @@
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #ffc107;
+}
+
+.btn:hover {
+  background-color: #202428;
+  border-color: #202428;
+}

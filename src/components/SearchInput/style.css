@@ -1,16 +1,19 @@
 .search-container {
-  background-color: #343434;
-  border-radius: 4px;
+  background-color: #202428;
+  color: #6c757d;
   padding: 0 1rem;
+  display: flex;
+  align-items: center;
 }
 
 .search-input {
   color: #fff;
-  width: 160px;
+  width: 146px;
   margin: auto;
   opacity: 0.7;
   height: 40px;
   background-color: transparent;
   outline: none;
   border: none;
+  margin: 0 0.5rem;
 }

@@ -8,7 +8,7 @@
 .card-title {
   /* Prefix required. Even Firefox only supports the -webkit- prefix */
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #edec51;
-  -webkit-text-stroke: 1px #edec51;
+  -webkit-text-stroke-color: #ffc107;
+  -webkit-text-stroke: 1px #ffc107;
   letter-spacing: 1px;
 }

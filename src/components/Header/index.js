@@ -1,9 +1,9 @@
 import Logo from "../../assets/img/logo.png";
-import SearchButton from "../SearchButton";
+import SearchInput from "../SearchInput";
 import SocialMedia from "../SocialMedia";
 import "./style.css";
 
-const Header = () => {
+const Header = ({ searchValue, onSearchValueChange }) => {
   return (
     <nav className="navbar sticky-top">
       <div className="container">
@@ -14,7 +14,7 @@ const Header = () => {
           <img src={Logo} className="nav-logo" />
         </div>
         <div className="action-container">
-          <SearchButton />
+          <SearchInput value={searchValue} onChange={onSearchValueChange} />
         </div>
       </div>
     </nav>

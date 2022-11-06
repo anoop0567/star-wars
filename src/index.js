@@ -4,7 +4,7 @@ import App from "./App";
 
 import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 const client = new ApolloClient({
-  uri: "https://graphql.org/swapi-graphql/",
+  uri: "https://swapi-graphql.netlify.app/.netlify/functions/index",
   cache: new InMemoryCache(),
 });
 
