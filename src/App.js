@@ -10,6 +10,7 @@ import "./App.css";
 function App() {
   const [films, setFilms] = useState([]);
   const [sortBy, setSortBy] = useState("TITLE");
+  const [director, setDirector] = useState("");
   const [searchValue, setSearchValue] = useState("");
 
   const { data, loading, error } = useQuery(FILMS_QUERY);
@@ -20,6 +21,11 @@ function App() {
       return;
     }
     let FILMS = data?.allFilms?.films || [];
+    if (director) {
+      FILMS = [...FILMS].filter((film) => {
+        return film.director == director;
+      });
+    }
     if (sortBy === "TITLE") {
       FILMS = [...FILMS].sort((a, b) => {
         if (a.title > b.title) return 1;
@@ -41,7 +47,7 @@ function App() {
       });
     }
     setFilms([...FILMS]);
-  }, [data, sortBy, searchValue]);
+  }, [data, sortBy, director, searchValue]);
 
   return (
     <>
@@ -51,6 +57,8 @@ function App() {
         films={films}
         sortBy={sortBy}
         setSortBy={setSortBy}
+        director={director}
+        setDirector={setDirector}
         error={error}
       />
       <Footer />

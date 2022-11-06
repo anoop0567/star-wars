@@ -1,13 +1,19 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 
 import MovieCard from "../MovieCard";
 import Loader from "../Loader";
 import MoviesActions from "../MoviesActions";
 import DataNotFound from "../DataNotFound";
 
-const MoviesContent = ({ loading, error, films, sortBy, setSortBy }) => {
-  const [directors, setDirectors] = useState([]);
-
+const MoviesContent = ({
+  loading,
+  error,
+  films,
+  sortBy,
+  setSortBy,
+  director,
+  setDirector,
+}) => {
   useEffect(() => {
     if (!films || films.length == 0) return;
   }, [films]);
@@ -18,6 +24,8 @@ const MoviesContent = ({ loading, error, films, sortBy, setSortBy }) => {
           <MoviesActions
             sortByValue={sortBy}
             onSortByChange={(value) => setSortBy(value)}
+            director={director}
+            onDirectorChange={(value) => setDirector(value)}
           />
         </div>
       </div>
