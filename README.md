@@ -1,6 +1,24 @@
-# Getting Started with Create React App
+## Star Wars Films 🎬
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project show the list of cards containing the following information regarding Star Wars films using graphql API.
+
+### The information present on the individual card:
+- Title
+- Release date
+- Producers
+- Director
+- Opening crawl
+
+### Features supported by the system:
+- Sorting based on title and release date.
+- Filtering(dropdown) based on a director.
+- Searching(input) based on the title
+
+### Screenshots
+|<img src="https://user-images.githubusercontent.com/31235491/200208268-c55213a0-c8b6-4a01-97ff-ee5acb8d433c.png" width="400">|<img src="https://user-images.githubusercontent.com/31235491/200208299-d6c168e6-e851-4ce7-8554-64e9ffc7820c.png" width="400">|
+|---|---|
+|<img src="https://user-images.githubusercontent.com/31235491/200208312-3a4d3d86-b272-4ace-aa18-e1128e2b8bd8.png" width="400">|<img src="https://user-images.githubusercontent.com/31235491/200208336-2dc0669f-b292-4b71-b373-e1741da52976.png" width="400">|
+|<img src="https://user-images.githubusercontent.com/31235491/200208917-0acad497-23c8-421a-bd08-dc6d1fa98e48.png" width="400">|<img src="https://user-images.githubusercontent.com/31235491/200208353-882881fc-3259-4898-a85d-102d0b6cc63c.png" width="400">|
 
 ## Available Scripts
 
@@ -38,33 +56,3 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
